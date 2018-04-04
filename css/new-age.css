@@ -250,6 +250,17 @@ section.download .badges .badge-link img {
   height: 60px;
 }
 
+section.download .btn-outline  {
+  color: black;
+  border-color: white;
+}
+
+section.download .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: black;
+  border-color: black;
+  background-color: #fdcc52;
+}
+
 @media (min-width: 768px) {
   section.download .badges .badge-link {
     display: inline-block;
