@@ -152,6 +152,7 @@ header.masthead {
   padding-bottom: 100px;
   color: white;
   background: url("../img/clock3.jpg"),  linear-gradient(to top, #000000, #ffffff);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 
@@ -182,11 +183,6 @@ header.masthead .header-content h1 {
 header.masthead .header-content h2 {
   font-size: 30px;
   letter-spacing: 4px; /*if letter width of h1 is longer than h2, when users using phone-size screen, it would be indeed ugly*/
-}
-
-.highlight{
-  font-weight:600;
-  color:orange;
 }
 
 header.masthead .device-container {
@@ -231,9 +227,15 @@ section.download {
 }
 
 section.download h2 {
-  font-size: 50px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 400;
   margin-top: 0;
+  padding-bottom: 10px;
 }
+section.download p {
+    font-size: 13px;
+} 
 
 section.download .badges .badge-link {
   display: block;
@@ -257,15 +259,31 @@ section.download .badges .badge-link img {
 
 @media (min-width: 768px) {
   section.download h2 {
-    font-size: 70px;
+    font-size: 45px;
+    font-weight: 200;
+  }
+  section.download p {
+    font-size: 18px;
   }
 }
+
+@media (min-width: 992px) {
+  section.download h2 {
+    font-size: 70px;
+    font-weight: 200;
+  }
+  section.download p {
+    font-size: 18px;
+  }
+}
+
 
 section.features .section-heading {
   margin-bottom: 100px;
 }
 
 section.features .section-heading h2 {
+  font-size: 30px;
   margin-top: 0;
 }
 
@@ -309,6 +327,14 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 992px) {
+  section.features .section-heading h2 {
+  font-size: 50px;
+  margin-top: 0;
+  }
+}
+
+
 section.cta {
   position: relative;
   padding: 250px 0;
@@ -335,7 +361,7 @@ section.cta .cta-content h2 {
 
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -460,4 +486,18 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+.highlight{
+  font-weight:600;
+  color:orange;
+}
+
+.strong {
+  font-weight:600;
+}
+
+.remark{
+  vertical-align: super;
+  font-size: 10px;
 }
