@@ -234,7 +234,7 @@ section.download h2 {
   padding-bottom: 10px;
 }
 section.download p {
-    font-size: 13px;
+    font-size: 18px;
 } 
 
 section.download .badges .badge-link {
@@ -338,7 +338,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/money_time_2.jpg");
+  background-image: url("../img/money_time_4.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
