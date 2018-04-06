@@ -1,7 +1,6 @@
 var modal = document.querySelector('.modal');
 var btns = document.querySelectorAll('.feature-btn');
 var ps = document.querySelectorAll('.feature-detail');
-var closeBtn = document.querySelector('.close');
 // Add buttons behavior: pop-up feature description and show the specific feature detail
 for (var i = 0; i < btns.length; i++){ 
     btns[i].addEventListener('click', function(){
@@ -11,9 +10,9 @@ for (var i = 0; i < btns.length; i++){
     });
 }
 //
-closeBtn.onclick = function () {
-    modal.style.display = "none";
-}
+// closeBtn.onclick = function () {
+//     modal.style.display = "none";
+// }
 
 window.onclick = function (event) {
     if (event.target == modal) {
