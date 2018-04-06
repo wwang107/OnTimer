@@ -19,15 +19,18 @@
   <!-- Custom styles for this template -->
   <link href="css/new-age.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
+    crossorigin="anonymous">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690686-1"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690686-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-116690686-1');
-  </script>
+  </script> -->
   
 
 </head>
@@ -51,7 +54,7 @@
           <a class="nav-link js-scroll-trigger" href="#features">OnTimer如何終結遲到?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">聯絡我們</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">分享OnTimer</a>
         </li>
       </ul>
     </div>
@@ -66,6 +69,8 @@
           <div class="header-content mx-auto">
             <h1 class="mb-5">時間已到, 人還未到？</h1>
             <h2><span class="highlight">OnTimer 聚會押金</span><br>從此, 聚會準時開始</h2>
+            <a target="_blank" class="btn" href="https://goo.gl/forms/FA6mQjgUAbK5MAAv1">
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;註冊並獲得通知!</a>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
@@ -97,7 +102,7 @@
         <p>每當舉辦一場聚會，即可利用<span class="strong">OnTimer</span>為這場聚會設定押金
           <br>參加的成員必須留下押金 與 承諾</p>
         <p>遲到的人將會損失押金，並平分給所有準時抵達的朋友！</p>
-        <a id="explain-deposit" class="btn btn-outline btn-xl js-scroll-trigger" onClick="clickEvent(this.id)">更多詳細說明!</a>
+        <a id="explain-deposit" class="btn btn-outline btn-xl js-scroll-trigger" href="#features">更多詳細說明!</a>
       </div>
     </div>
   </div>
@@ -135,15 +140,15 @@
                 <h3>罰金累進</h3>
                 <p class="text-muted">找朋友一起揪團，賭上彼此的押金
                   <br>遲到時逐漸流失的押金是動力！</p>
-                  <a id="再也不會被放鳥了" class="btn btn-outline btn-xl js-scroll-trigger" onClick="clickEvent(this.id)">我想了解更多!</a>
+                  <a id="feature-deposit" class="feature-btn btn btn-outline btn-xl js-scroll-trigger">我想了解更多!</a>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="feature-item">
                 <i class="icon-camera text-primary"></i>
                 <h3>養成習慣</h3>
-                <p class="text-muted">5次守時，拿回部分被沒收的押金<span class="remark">1</span></p>
-                <a id="提醒出門時間" class="btn btn-outline btn-xl js-scroll-trigger" onClick="clickEvent(this.id)">我想了解更多!</a>
+                <p class="text-muted">5次守時，拿回部分被沒收的押金<span class="remark">1</span></p><br>
+                <a id="feature-habit" class="feature-btn btn btn-outline btn-xl js-scroll-trigger" >我想了解更多!</a>
               </div>
             </div>
           </div>
@@ -154,7 +159,7 @@
                 <h3>Why so serious?</h3>
                 <p class="text-muted">不必總是用真錢當押金
                   <br>使用OnTimer虛擬幣<span class="remark">2</span>一樣能行！</p>
-                  <a id="再也不會被放鳥了" class="btn btn-outline btn-xl js-scroll-trigger" onClick="clickEvent(this.id)">我想了解更多!</a>
+                  <a id="feature-currency" class="feature-btn btn btn-outline btn-xl js-scroll-trigger" >我想了解更多!</a>
               </div>
             </div>
             <div class="col-lg-6">
@@ -164,7 +169,7 @@
                 <p class="text-muted">
                   為你客製化出門提醒
                   <br>維持難能可貴的友誼並保住押金</p>
-                  <a id="提醒出門時間" class="btn btn-outline btn-xl js-scroll-trigger" onClick="clickEvent(this.id)">我想了解更多!</a>
+                  <a id="feature-notification" class="feature-btn btn btn-outline btn-xl js-scroll-trigger" >我想了解更多!</a>
               </div>
             </div>
           </div>
@@ -174,13 +179,41 @@
   </div>
 </section>
 
+<section id = "feaute-explain" class = "modal">
+  <div class = "modal-content">
+    <div id = "feature-deposit" class = "feature-detail">
+      <header id = "modal-header" class = "modal-header">罰金累進</header>
+      <p>一但聚會時間開始，OnTimer將會隨時間從遲到的人身上連續扣款，直到遲到的人抵達聚會地點；若扣款總額已達聚會押金，OnTimer則會停止扣款。</p>
+      <footer id = "modal-footer" class = 'modal-footer'><span class="close">&times;</span></footer>
+    </div>
+
+    <div id = "feature-habit" class = "feature-detail">
+      <header id = "modal-header" class="modal-header">養成習慣</header>
+      <p>為了鼓勵養成守時的習慣，被沒收押金的人若連續五次(限在不同天)準時抵達聚會，OnTimer會將部分被沒收的押金退還。</p>
+      <footer id = "modal-footer" class='modal-footer'><span class="close">&times;</span></footer>
+    </div>
+
+    <div id = "feature-currency" class = "feature-detail">
+      <header id = "modal-header" class="modal-header">小賭怡情</header>
+      <p>OnTimer提供你虛擬幣作為押金，讓你先使用虛擬幣作為押金，試用看看OnTimer!</p>
+      <footer id = "modal-footer" class='modal-footer'><span class="close">&times;</span></footer>
+    </div>
+
+    <div id = "feature-notification" class = "feature-detail">
+      <header id = "modal-header" class="modal-header">提醒出門時間</header>
+      <p>OnTimer會依照你抵達聚會的時間記錄，提醒你"準備"出門了。藉著GPS移動紀錄，OnTimer分析你的出門習慣，因此在提醒時你將有充分的時間準備!</p>
+      <footer id = "modal-footer" class='modal-footer'><span class="close">&times;</span></footer>
+  </div>
+
+</section>
+
 <section class="cta">
   <div class="cta-content">
     <div class="container">
       <h2><span class="highlight">OnTimer</span>
         <br>終結遲到
         <br>聚會準時開始</h2>
-      <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">通知我最新消息</a>
+      <a target="_blank" href="https://goo.gl/forms/FA6mQjgUAbK5MAAv1" class="btn btn-outline btn-xl js-scroll-trigger">註冊並獲得通知!</a>
     </div>
   </div>
   <div class="overlay"></div>
