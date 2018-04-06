@@ -5,6 +5,10 @@ body {
   height: 100%;
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
@@ -379,7 +383,7 @@ section.modal .modal-content .feature-detail #modal-header{
 }
 
 section.modal .modal-content .feature-detail #modal-footer{
-    text-align: center;
+    text-align: center !important;
     background-color: white;
 }
 
