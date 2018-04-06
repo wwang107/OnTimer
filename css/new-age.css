@@ -20,6 +20,10 @@ a:hover, a:focus {
   color: #fcbd20;
 }
 
+a, a:visited {
+    border-color: inherit;
+}
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -362,11 +366,28 @@ section.modal .modal-content {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 
-section.modal .modal-content p{
+section.modal .modal-content .feature-detail{
     display: none;
 }
+
+section.modal .modal-content .header{
+    text-align: center;
+}
+
+section.modal .modal-content .footer{
+    text-align: center;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+
 
 @media (min-width: 992px) {
   section.features .section-heading h2 {

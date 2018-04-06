@@ -1,26 +1,21 @@
 var modal = document.querySelector('.modal');
-// var btn = document.querySelector('#feature-btn-deposit');
 var btns = document.querySelectorAll('.feature-btn');
-// add button behavior to modal buttons
 var ps = document.querySelectorAll('.feature-detail');
-console.log(ps);
+
+// Add buttons behavior: pop-up feature description and show the specific feature detail
 for (var i = 0; i < btns.length; i++){ 
     btns[i].addEventListener('click', function(){
         modal.style.display = "block";
         p = document.querySelectorAll('#'+this.id)[1];
-        p.style.display = 'block';
+        p.style.display = 'block'; // show clicked feature detail
     });
 }
-// When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// }
-// // When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
         for (var i=0; i<ps.length; i++){
-            ps[i].style.display = 'none';
+            ps[i].style.display = 'none'; // set the clicked feature display attribute back to "None" once the pop-up closed
         }
     }
 } 
