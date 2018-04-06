@@ -374,12 +374,27 @@ section.modal .modal-content .feature-detail{
     display: none;
 }
 
-section.modal .modal-content .header{
+section.modal .modal-content .feature-detail #modal-header{
     text-align: center;
 }
 
-section.modal .modal-content .footer{
+section.modal .modal-content .feature-detail #modal-footer{
     text-align: center;
+    background-color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fdcc52;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @keyframes animatetop {
@@ -394,6 +409,16 @@ section.modal .modal-content .footer{
   font-size: 50px;
   margin-top: 0;
   }
+
+  section.modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
 }
 
 
