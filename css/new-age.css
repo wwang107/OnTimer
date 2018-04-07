@@ -380,12 +380,17 @@ section.modal .modal-content .feature-detail{
 }
 
 section.modal .modal-content .feature-detail #modal-header{
+    padding: 10px 20px;
     text-align: center;
 }
 
 section.modal .modal-content .feature-detail #modal-footer{
     text-align: center;
     background-color: white;
+}
+
+section.modal .modal-content .feature-detail p{
+margin: 20px;
 }
 
 .close {
