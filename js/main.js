@@ -13,7 +13,7 @@ for (var i = 0; i < featureBtns.length; i++){
         modal.style.display = "block";
         featureDetail = document.querySelectorAll('#'+this.id)[1]; //use the id of the button to get the correspond modal content
         featureDetail.style.display = 'block'; // show clicked feature detail
-        ga('send', 'event', 'Feature', this.id);
+        ga('send', 'event', 'Feature', this.id,'blah');
     });
 }
 
