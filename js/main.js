@@ -13,6 +13,7 @@ for (var i = 0; i < featureBtns.length; i++){
         modal.style.display = "block";
         featureDetail = document.querySelectorAll('#'+this.id)[1]; //use the id of the button to get the correspond modal content
         featureDetail.style.display = 'block'; // show clicked feature detail
+        ga('send', 'event', 'Feature', this.id);
     });
 }
 
@@ -38,8 +39,8 @@ window.onclick = function (event) {
     }
 } 
 
-// // Google Analytics Btn behavior
-// function clickEvent(clicked_id) {
-//     var element = document.querySelector('#'+'clicked_id');
-//     ga('send', 'event', 'feature', clicked_id, 'Fall Campaign');
-// }
+// Google Analytics Btn behavior
+function clickEvent(clicked_id) {
+    var element = document.querySelector('#'+'clicked_id');
+    ga('send', 'event', 'feature', clicked_id, 'Fall Campaign');
+}
