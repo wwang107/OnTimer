@@ -43,7 +43,7 @@ function clickEvent(action, event_category, event_label) {
     // var element = document.querySelector('#'+'clicked_id');
     gtag('event', action, {
         'event_category': event_category,
-        'event_label': event_category
+        'event_label': event_label
     });
 
 }
