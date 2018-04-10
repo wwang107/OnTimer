@@ -13,10 +13,6 @@ for (var i = 0; i < featureBtns.length; i++){
         modal.style.display = "block";
         featureDetail = document.querySelectorAll('#'+this.id)[1]; //use the id of the button to get the correspond modal content
         featureDetail.style.display = 'block'; // show clicked feature detail
-        gtag('event', 'feature', {
-            'event_category': this.id,
-            'event_label': 'feature button'
-        });
     });
 }
 
@@ -43,11 +39,11 @@ window.onclick = function (event) {
 } 
 
 // Google Analytics Btn behavior
-function clickEvent(clicked_id) {
-    var element = document.querySelector('#'+'clicked_id');
-    gtag('event', 'poll clicked', {
+function clickEvent(action, event_category, event_label) {
+    // var element = document.querySelector('#'+'clicked_id');
+    gtag('event', action, {
         'event_category': 'poll',
-        'event_label': '問卷'
+        'event_label': event_category
     });
 
 }
