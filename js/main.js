@@ -42,6 +42,6 @@ window.onclick = function (event) {
 // Google Analytics Btn behavior
 function clickEvent(clicked_id) {
     var element = document.querySelector('#'+'clicked_id');
-    ga('send', 'event', 'feature', clicked_id, 'Fall Campaign');
-    console.log(clicked_id);
+    ga('send', 'event', "click", clicked_id);
+    console.log('clicked');
 }
