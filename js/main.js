@@ -13,7 +13,10 @@ for (var i = 0; i < featureBtns.length; i++){
         modal.style.display = "block";
         featureDetail = document.querySelectorAll('#'+this.id)[1]; //use the id of the button to get the correspond modal content
         featureDetail.style.display = 'block'; // show clicked feature detail
-        ga('send', 'event', 'Feature', ''+this.id,'blah');
+        gtag('event', 'feature', {
+            'event_category': this.id,
+            'event_label': 'feature button'
+        });
     });
 }
 
@@ -42,6 +45,9 @@ window.onclick = function (event) {
 // Google Analytics Btn behavior
 function clickEvent(clicked_id) {
     var element = document.querySelector('#'+'clicked_id');
-    ga('send', 'event', "click", clicked_id);
-    console.log('clicked');
+    gtag('event', 'poll clicked', {
+        'event_category': 'poll',
+        'event_label': '問卷'
+    });
+
 }
